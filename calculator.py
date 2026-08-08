@@ -1,0 +1,34 @@
+import math
+print("WELCOME TO THE CALCULATOR")
+print ("ENTER TWO NUMBERS")
+a=int(input("enter 1st number: "))
+b=int(input("enter 2nd number: "))
+print("Enter your choice:1 for addition,2 for subtraction,3 for multiplication,4 for division,5 for remainder,6 for power,7 for square root,8 for Factorial,9 for LCM")
+c=int(input("enter your choice: "))
+
+
+
+if(c==1):
+    print("The sum of two numbers is  ",a+b)
+if(c==2):
+    print("The difference of two numbers is  ",a-b)
+if(c==3):
+    print("the product of two numbers is  ",a*b)
+if(c==4):
+    print("The division of two numbers is  ",a/b)
+if(c==5):
+    print("The remainder of two numbers is  ",a%b)
+if(c==6):
+    print("The power of two numbers is  ",a**b) 
+if(c==7):
+    print("The square root of first number is  ",math.sqrt(a))
+    print("The square root of second number is  ",math.sqrt(b))
+if(c==8):
+    print("The factorial of first number is  ",math.factorial(a))
+    print("The factorial of second number is  ",math.factorial(b))
+if(c==9):
+    for i in range(1,1001):
+        if i%a==0 and i%b==0:
+            print("The LCM of two numbers is  ",i)
+            break
+print("THANK YOU FOR USING MY CALCULATOR")
